@@ -87,11 +87,6 @@ body {
   margin-bottom: 0px;
 }
 
-.list .subtitle {
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-
 .list.icon {
   margin-top: 16px;
   margin-bottom: 0px;
@@ -104,27 +99,77 @@ body {
 }
 
 .worker.item {
+  background-color: #fff;
   margin-right: 30px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 
   border-radius: 4px;
   text-align: center;
+  width: 270px;
 }
 
 .list.icon .item {
-  margin-right: 10px;
+  margin-right: 16px;
+  width: 206px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.list.icon .item:hover {
+  background-color: var(--primary-text-color);
+}
+
+.insta {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+.fill-icon {
+  fill: #afb1b8;
+}
+
+.fill-icon:hover {
+  fill: #ffffff;
 }
 
 .list.klient {
   display: flex;
   margin-top: 50px;
   margin-bottom: 0px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .list.klient .item {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
   margin-right: 30px;
+  padding-top: 20px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.list.klient .item:hover {
+  border: 1px solid var(--primary-text-color);
 }
 
 .logo-web {
@@ -159,7 +204,7 @@ body {
   content: "";
 
   margin-right: 10px;
-  background-image: url(../img/post.png);
+  background-image: url(../img/post.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -171,7 +216,7 @@ body {
 
   margin-right: 10px;
 
-  background-image: url(../img/Vector.png);
+  background-image: url(../img/smartphone.svg);
   background-size: contain;
 }
 
@@ -320,10 +365,22 @@ body {
   padding-left: 0px;
   margin-top: 20px;
   margin-bottom: 0px;
+  width: 206px;
+  justify-content: space-between;
 }
 
-.list.list-join .item {
+.list-join .item {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
+
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list-join .item:hover {
+  background-color: var(--primary-text-color);
 }
 
 .mail {
@@ -425,8 +482,29 @@ body {
   margin-right: 30px;
 }
 
-.list.advantages .item :last-of-type {
-  margin-right: 0px;
+.list.advantages .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-sputnik::before {
+  background-image: url(../img/antenna.png);
+}
+
+.icon-time::before {
+  background-image: url(../img/clock.png);
+}
+
+.icon-tv::before {
+  background-image: url(../img/diagram.png);
+}
+
+.icon-cosm::before {
+  background-image: url(../img/astronaut.png);
 }
 
 .list.work {
@@ -438,6 +516,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  padding-bottom: 94px;
 }
 
 .title-logo-white {
@@ -478,6 +557,9 @@ body {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 2;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 24px;
 }
 
 .techno {
@@ -521,6 +603,43 @@ body {
   margin-left: 10px;
 }
 
+.insta-footer {
+  width: 20px;
+  height: 20px;
+}
+
+.insta-footer:hover {
+  background-color: var(--primary-text-color);
+}
+
+.twitter-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.twitter-footer:hover {
+  background-color: var(--primary-text-color);
+}
+
+.facebook-footer {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook-footer:hover {
+  background-color: var(--primary-text-color);
+}
+
+.linkedin-footer {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedin-footer:hover {
+  background-color: var(--primary-text-color);
+}
+
 .developed {
   display: block;
   text-align: center;
@@ -557,6 +676,9 @@ body {
 .flex-container .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .flex-container .item:nth-child(3n) {
@@ -565,5 +687,62 @@ body {
 
 .item .subtitle {
   margin-top: 4px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.list .subtitle {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.logo-one {
+  width: 44px;
+  height: 49px;
+}
+
+.logo-two {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-three {
+  width: 41px;
+  height: 42px;
+}
+
+.logo-four {
+  width: 79px;
+  height: 42px;
+}
+
+.logo-five {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-six {
+  width: 88px;
+  height: 45px;
+}
+
+.fill {
+  fill: #afb1b8;
+}
+
+.fill:hover {
+  fill: var(--primary-text-color);
+}
+
+.subtitle-port {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  color: var(--main-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.flex-container .item.card {
+  width: 370px;
 }

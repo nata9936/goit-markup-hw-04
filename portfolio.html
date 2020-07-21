@@ -18,29 +18,25 @@
             <a class="site-nav-item paragraph" href="./index.html">Студия</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-item paragraph" href="./portfolio.html"
-              >Портфолио</a
-            >
+            <a class="site-nav-item paragraph" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-item paragraph" href="">Контакты</a>
           </li>
         </ul>
-
+    
         <div class="list nav">
-          <a class="paragraph" href="mailto:info@devstudio.com">
-            <img
-              src="./img/envelope(hover).png"
-              alt="иконка почты"
-            />info@devstudio.com
+          <a class="paragraph post" href="mailto:info@devstudio.com">
+            info@devstudio.com
           </a>
-          <a class="paragraph" href="tel:+380961111111"
-            ><img src="./img/Vector.png" alt="иконка телефона" />
+          <a class="paragraph tel" href="tel:+380961111111">
             +38 096 111 11 11
           </a>
         </div>
       </div>
     </header>
+
+    
 
     <main>
       <!--Navigation-->
@@ -64,7 +60,7 @@
           <li class="item">
             <img src="./img/techno.jpg" />
             <h2 class="title-port">Технокряк</h2>
-            <p class="subtitle">
+            <p class="subtitle-port">
               Веб-сайты
             </p>
             <!-- <p class="techno"> 
@@ -76,7 +72,7 @@
           <li class="item">
             <img src="./img/poster.jpg" />
             <h2 class="title-port">Постер New Orlean vs Golden Star</h2>
-            <p class="subtitle">Дизайн</p>
+            <p class="subtitle-port">Дизайн</p>
             <!-- <p class="techno"> 
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -86,7 +82,7 @@
           <li class="item">
             <img src="./img/restourant.jpg" />
             <h2 class="title-port">Ресторан Seafood</h2>
-            <p class="subtitle">Приложение</p>
+            <p class="subtitle-port">Приложение</p>
             <!-- <p class="techno"> 
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -96,7 +92,7 @@
           <li class="item">
             <img src="./img/prime.jpg" />
             <h2 class="title-port">Проект Prime</h2>
-            <p class="subtitle">Маркетинг</p>
+            <p class="subtitle-port">Маркетинг</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -106,7 +102,7 @@
           <li class="item">
             <img src="./img/boxes.jpg" />
             <h2 class="title-port">Проект Boxes</h2>
-            <p class="subtitle">Приложение</p>
+            <p class="subtitle-port">Приложение</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -116,7 +112,7 @@
           <li class="item">
             <img src="./img/inspiration.jpg" />
             <h2 class="title-port">Inspiration has no Borders</h2>
-            <p class="subtitle">Веб-сайт</p>
+            <p class="subtitle-port">Веб-сайт</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -126,7 +122,7 @@
           <li class="item">
             <img src="./img/limited.jpg" />
             <h2 class="title-port">Издание Limited Edition</h2>
-            <p class="subtitle">Дизайн</p>
+            <p class="subtitle-port">Дизайн</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -136,7 +132,7 @@
           <li class="item">
             <img src="./img/lab.jpg" />
             <h2 class="title-port">Проект LAB</h2>
-            <p class="subtitle">Маркетинг</p>
+            <p class="subtitle-port">Маркетинг</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -146,7 +142,7 @@
           <li class="item">
             <img src="./img/buisnes.jpg" />
             <h2 class="title-port">Growing Business</h2>
-            <p class="subtitle">Приложение</p>
+            <p class="subtitle-port">Приложение</p>
             <!-- <p class="techno">
               Технокряк это современная площадка распространения коронавируса.
               Компании используют эту платформу для цифрового шпионажа и атак на
@@ -161,11 +157,10 @@
     <footer class="page-footer">
       <div class="container footer">
         <div class="footer-logo">
-          <p>
+          <p class="studio">
             <a href="">
               <span class="logo-web">Web</span>
-              <span class="title-logo-white">Studio</span></a
-            >
+              <span class="title-logo-white">Studio</span></a>
           </p>
           <ul class="list contact">
             <li>
@@ -179,25 +174,39 @@
             </li>
           </ul>
         </div>
-
+    
         <div class="join-in">
           <p class="title-white">Присоединяйтесь</p>
           <ul class="list list-join">
             <li class="item">
-              <a href=""><img src="./img/Ellipse.svg" alt="instagram" /></a>
+              <svg class="insta-footer">
+                <use href="./img/symbol.defs.svg#icon-instagram2"></use>
+              </svg>
             </li>
             <li class="item">
-              <a href=""><img src="./img/Ellipse2.svg" alt="twitter" /></a>
+              <a href="">
+                <svg class="twitter-footer">
+                  <use href="./img/symbol.defs.svg#icon-twitter1"></use>
+                </svg>
+              </a>
             </li>
             <li class="item">
-              <a href=""><img src="./img/Ellipse3.svg" alt="facebook" /></a>
+              <a href="">
+                <svg class="facebook-footer">
+                  <use href="./img/symbol.defs.svg#icon-facebook1"></use>
+                </svg>
+              </a>
             </li>
             <li class="item">
-              <a href=""><img src="./img/Ellipse4.svg" alt="in" /></a>
+              <a href="">
+                <svg class="linkedin-footer">
+                  <use href="./img/symbol.defs.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-
+    
         <div class="mail">
           <p class="title-white">Подпишитесь на рассылку</p>
           <ul class="list list-mail">
@@ -206,9 +215,7 @@
             </li>
             <li>
               <button class="frame-button">
-                <a class="button" href=""
-                  >Подписаться<img class="icon-img" src="./img/iconsend2.svg"
-                /></a>
+                <a class="button" href="">Подписаться<img class="icon-img" src="./img/iconsend.svg" /></a>
               </button>
             </li>
           </ul>
