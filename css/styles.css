@@ -113,9 +113,6 @@ body {
   margin-right: 16px;
   width: 206px;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
 }
 
 .list.icon .item:hover {
@@ -123,23 +120,31 @@ body {
 }
 
 .insta {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .twitter {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .facebook {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .linkedin {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .fill-icon {
@@ -163,7 +168,7 @@ body {
   width: 170px;
   height: 90px;
   margin-right: 30px;
-  padding-top: 20px;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -198,7 +203,33 @@ body {
   display: flex;
 }
 
-.paragraph.post::before {
+.icon-post {
+  display: block;
+  width: 16px;
+  height: 11px;
+  fill: var(--main-text);
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.icon-post:hover {
+  fill: var(--primary-text-color);
+}
+
+.icon-smartphone {
+  display: block;
+  width: 10px;
+  height: 14px;
+  fill: var(--main-text);
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.icon-smartphone:hover {
+  fill: var(--primary-text-color);
+}
+
+/* .paragraph.post::before {
   width: 16px;
   height: 11px;
   content: "";
@@ -207,9 +238,9 @@ body {
   background-image: url(../img/post.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 
-.paragraph.tel::before {
+/* .paragraph.tel::before {
   width: 10px;
   height: 14px;
   content: "";
@@ -218,7 +249,7 @@ body {
 
   background-image: url(../img/smartphone.svg);
   background-size: contain;
-}
+} */
 
 .paragraph:not(:last-child) {
   margin-right: 30px;
@@ -482,6 +513,10 @@ body {
   margin-right: 30px;
 }
 
+.list.advantages .item:last-child {
+  margin-right: 0px;
+}
+
 .list.advantages .item::before {
   display: block;
   content: "";
@@ -510,6 +545,7 @@ body {
 .list.work {
   display: flex;
   justify-content: center;
+  padding-left: 0px;
 }
 
 .list.worker {
@@ -517,6 +553,7 @@ body {
   justify-content: center;
   margin-top: 50px;
   padding-bottom: 94px;
+  padding-left: 0px;
 }
 
 .title-logo-white {
@@ -696,33 +733,45 @@ body {
 }
 
 .logo-one {
-  width: 44px;
-  height: 49px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 20px 63px;
 }
 
 .logo-two {
-  width: 40px;
-  height: 52px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 19px 65px;
 }
 
 .logo-three {
-  width: 41px;
-  height: 42px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 24px 64px;
 }
 
 .logo-four {
-  width: 79px;
-  height: 42px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 24px 45px;
 }
 
 .logo-five {
-  width: 59px;
-  height: 47px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 22px 55px;
 }
 
 .logo-six {
-  width: 88px;
-  height: 45px;
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 22px 40px;
 }
 
 .fill {
