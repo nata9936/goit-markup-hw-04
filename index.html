@@ -17,7 +17,7 @@
 
   <body>
     <main>
-      <header>
+      <header class="header">
         <div class="container main-nav">
           <a href="">
             <span class="logo-web">Web</span>
@@ -25,10 +25,13 @@
           </a>
           <ul class="list site-nav-item">
             <li class="site-nav-item">
-              <a class="site-nav-item paragraph" href="">Студия</a>
+              <a class="site-nav-item paragraph studio" href="">Студия </a>
             </li>
+
             <li class="site-nav-item">
-              <a class="site-nav-item paragraph" href="./portfolio.html"
+              <a
+                class="site-nav-item paragraph portfolio"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -37,20 +40,24 @@
             </li>
           </ul>
 
-          <div class="list nav">
-            <a class="paragraph post" href="mailto:info@devstudio.com">
-              <svg class="icon-post">
-                <use href="./img/symbol-defs.svg#icon-post"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-            <a class="paragraph tel" href="tel:+380961111111">
-              <svg class="icon-smartphone">
-                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </div>
+          <ul class="list nav">
+            <li class="auth-nav">
+              <a class="link" href="mailto:info@devstudio.com">
+                <svg class="logo-contacts" width="16" height="10">
+                  <use href="./img/symbol-defs.svg#icon-post"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="auth-nav">
+              <a class="link" href="tel:+380961111111">
+                <svg class="logo-contacts phone" width="10" height="16">
+                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
         </div>
       </header>
       <!--Services-->
@@ -102,20 +109,18 @@
           <h2 class="submain-title doing">Чем мы занимаемся</h2>
           <ul class="list work">
             <li class="item">
-              <img class="pictures-work" src="./img/img.svg" alt="ноут" /><a
-                class="name-work"
-                href=""
+              <img src="./img/img.svg" alt="ноут" /><a class="name-work" href=""
                 >Десктопные приложения</a
               >
             </li>
             <li class="item">
-              <img class="pictures-work" src="./img/box.svg" alt="телефон" /><a
+              <img src="./img/box.svg" alt="телефон" /><a
                 class="name-work"
                 href=""
                 >Мобильные приложения</a
               >
             </li>
-            <li class="pictures-work" class="item">
+            <li class="item">
               <img src="./img/img1.svg" alt="комп" /><a
                 class="name-work"
                 href=""
